@@ -1,6 +1,9 @@
 # action.yaml
 name: 'Byd-Rename-Package'
 description: 'Create an npm script that edits your package.json'
+branding:
+  icon: 'award'  
+  color: 'green'
 inputs:
   package_name:
     description: 'Package Name'
