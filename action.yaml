@@ -1,0 +1,16 @@
+# action.yaml
+name: 'Byd-Rename-Package'
+description: 'Create an npm script that edits your package.json so that it changes the original name of the package to the one you need to publish to GPR (scope included)'
+inputs:
+  package_name:
+    description: 'Package Name'
+    required: true
+    default: 1
+outputs:
+  package_name:
+    description: 'Package Name'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.package_name}}
