@@ -1,0 +1,13 @@
+name: 'Beyond Package Rename'
+description: 'Rename packages where running on CI/CD'
+inputs:
+  packages-path:  # id of input
+    description: 'The packages path'
+    required: false
+    default: 'projects'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.js'

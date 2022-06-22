@@ -1,0 +1,25 @@
+{
+  "name": "byd-package-rename",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfelli/byd-package-rename.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfelli/byd-package-rename/issues"
+  },
+  "homepage": "https://github.com/sfelli/byd-package-rename#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.1",
+    "fast-glob": "^3.2.11"
+  }
+}
