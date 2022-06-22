@@ -9,10 +9,10 @@ jobs:
         uses: actions/checkout@v3
       - name: Hello rename action step
         id: action
-        uses: ./ # Uses an action in the root directory
+      #uses: ./ # Uses an action in the root directory
       #- name: Action step
        # id: rename
-        #uses: sfelli/byd-package-rename@v1.0.1
+        uses: sfelli/byd-package-rename@main
         with:
           projects-path: './projects'
           old-prefix: 'stend'
