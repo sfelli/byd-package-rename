@@ -27,7 +27,7 @@ The time we greeted you.
 ```yaml
 uses: actions/byd-package-rename@main
 with:
-  packages-path: '/projects'
+  packages-path: './projects'
   old-prefix: 'sixense'
   new-prefix: 'sxd-platform'
 
