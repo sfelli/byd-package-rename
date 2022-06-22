@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to rename prefix packages
+    steps:
+      - name: Action step
+        id: rename
+        uses: octocat/byd-package-rename@main
+        with:
+          projects-path: 'projects'
+          old-prefix: 'stend'
+          new-prefix: 'sixense'
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
