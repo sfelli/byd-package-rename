@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Hello world action step
+      - name: Hello rename action step
+        id: action
         uses: ./ # Uses an action in the root directory
       #- name: Action step
        # id: rename
@@ -17,4 +18,4 @@ jobs:
           old-prefix: 'stend'
           new-prefix: 'sixense'
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time was ${{ steps.action.outputs.time }}"
