@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Action step
         id: rename
-        uses: octocat/byd-package-rename@main
+        uses: octocat/byd-package-rename@v1
         with:
           projects-path: 'projects'
           old-prefix: 'stend'
