@@ -9,11 +9,9 @@ try {
   const newPrefix = core.getInput('new-prefix') || 'sxd-platform';
   const publishRegistry= core.getInput('publish-registry') || 'https://npm.pkg.github.com/';
 
-  console.info(`Beyong packages rename running !`);
+  console.info(`Beyond packages rename running !`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.info(`The event payload: ${payload}`);
 
   glob.sync(`${projectsPath}/**/package.json`).forEach((file) => {
     const package = require(path.resolve(file));
