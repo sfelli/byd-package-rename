@@ -1,6 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 const path = require('path');
+const glob = require("fast-glob");
 
 try {
   const projectsPath = core.getInput('projects-path') || './projects';
