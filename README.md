@@ -25,7 +25,7 @@ The time we greeted you.
 ## Example usage
 
 ```yaml
-uses: actions/byd-package-rename@master
+uses: actions/byd-package-rename@main
 with:
   packages-path: '/projects'
   old-prefix: 'sixense'
