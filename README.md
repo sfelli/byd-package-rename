@@ -4,7 +4,7 @@
 <img src="https://github.com/sfelli/byd-package-rename/actions/workflows/main.yml/badge.svg"></img>
 <p>
 
-<h3 align="center">This action rename packages with a specific prefix name.For example to publish packages to npm and github registry</h3>
+<h3 align="center">This action rename packages with a specific prefix name.For example to publish packages to npm and github registry on CI/CD</h3>
 <p align="center" >
 <img style="width:70%" src="https://user-images.githubusercontent.com/55245802/175319469-c1b5855e-0d54-4d9b-bb19-0e0e76929b37.png"></img>
 <p>
