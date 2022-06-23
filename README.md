@@ -1,4 +1,4 @@
-<h1 align="center">Beyond Package Rename action <img style="width:28px;height:28px;" src="https://user-images.githubusercontent.com/55245802/175317613-21f8f2d1-b33e-4b34-ae50-bd6cc7f61ba8.png"></img></h1> 
+<h1 align="center">Beyond Packages Rename action <img style="width:28px;height:28px;" src="https://user-images.githubusercontent.com/55245802/175317613-21f8f2d1-b33e-4b34-ae50-bd6cc7f61ba8.png"></img></h1> 
 
 <p align="center">
 <img src="https://github.com/sfelli/byd-package-rename/actions/workflows/main.yml/badge.svg"></img>
