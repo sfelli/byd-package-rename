@@ -11,19 +11,18 @@
 
 ### `packages-path`
 
-**Optional** The pachages path. `Default` : `"./projects/**/package.json"`
+`Optional` The pachages path. `Default` : `"./projects/**/package.json"`
 
 ### `old-prefix`
 
-**Optional** The old prefix package`. `Default` : `sixense`
+`Optional` The old prefix package. `Default` : `sixense`
 
-### `new-prefix`
-
-**Optional** The new prefix package. `Default` : `sxd-platform`
+### `new-prefix` 
+`Optional` The new prefix package. `Default` : `sxd-platform`
   
 ### `publish-registry`
 
-**Optional** The publish npm registry. `Default` : `"https://npm.pkg.github.com/"`
+`Optional` The publish npm registry. `Default` : `"https://npm.pkg.github.com/"`
   
 ## Outputs
 
@@ -37,8 +36,8 @@ The renamed packages with new prefix.
 uses: actions/byd-package-rename@main
 with:
   packages-path: './libs/package.json'.
-  old-prefix: 'sixense'
-  new-prefix: 'sxd-platform'
+  old-prefix: 'stend'
+  new-prefix: 'stend-platform'
   publish-registry: 'https://npm.pkg.github.com/'
 
 ```
