@@ -16043,7 +16043,7 @@ const path = __nccwpck_require__(1017);
 const glob = __nccwpck_require__(1696);
 
 try {
-  const projectsPath = core.getInput('projects-path') || './projects';
+  const projectsPath = core.getInput('packages-path') || './projects/**/package.json';
   const oldPrefix = core.getInput('old-prefix') || 'sixense';
   const newPrefix = core.getInput('new-prefix') || 'sxd-platform';
   const publishRegistry= core.getInput('publish-registry') || 'https://npm.pkg.github.com/';
@@ -16051,10 +16051,8 @@ try {
   console.info(`Beyond packages rename running !`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.info(`The event payload: ${payload}`);
 
-  glob.sync(`${projectsPath}/**/package.json`).forEach((file) => {
+  glob.sync(`${projectsPath}`).forEach((file) => {
     const package = require(path.resolve(file));
     if (package.name) {
       package.publishConfig = {
