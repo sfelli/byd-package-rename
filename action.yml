@@ -4,7 +4,19 @@ inputs:
   packages-path:  # id of input
     description: 'The packages path'
     required: false
-    default: 'projects'
+    default: './projects/**/package.json'
+  old-prefix: # id of input
+    description: 'The old packages prefix'
+    required: false
+    default: 'new-prefix'
+  new-prefix:  # id of input
+    description: 'The new packages prefix'
+    required: false
+    default: 'sxd-platform'
+  publish-registry:  # id of input
+    description: 'The npm publish registry'
+    required: false
+    default: 'https://npm.pkg.github.com/'
 outputs:
   time: # id of output
     description: 'The time we greeted you'

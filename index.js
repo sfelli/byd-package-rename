@@ -4,7 +4,7 @@ const path = require('path');
 const glob = require("fast-glob");
 
 try {
-  const projectsPath = core.getInput('projects-path') || './projects/**/package.json';
+  const projectsPath = core.getInput('packages-path') || './projects/**/package.json';
   const oldPrefix = core.getInput('old-prefix') || 'sixense';
   const newPrefix = core.getInput('new-prefix') || 'sxd-platform';
   const publishRegistry= core.getInput('publish-registry') || 'https://npm.pkg.github.com/';
