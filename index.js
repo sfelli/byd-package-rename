@@ -4,10 +4,10 @@ const path = require('path');
 const glob = require("fast-glob");
 
 try {
-  const projectsPath = core.getInput('packages-path') || './projects/**/package.json';
-  const oldPrefix = core.getInput('old-prefix') || 'sixense';
-  const newPrefix = core.getInput('new-prefix') || 'sxd-platform';
-  const publishRegistry= core.getInput('publish-registry') || 'https://npm.pkg.github.com/';
+  const projectsPath = core.getInput('packages-path');
+  const oldPrefix = core.getInput('old-prefix');
+  const newPrefix = core.getInput('new-prefix');
+  const publishRegistry= core.getInput('publish-registry');
 
   console.info(`Beyond packages rename running !`);
   const time = (new Date()).toTimeString();

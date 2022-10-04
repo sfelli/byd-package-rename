@@ -16043,10 +16043,10 @@ const path = __nccwpck_require__(1017);
 const glob = __nccwpck_require__(1696);
 
 try {
-  const projectsPath = core.getInput('packages-path') || './projects/**/package.json';
-  const oldPrefix = core.getInput('old-prefix') || 'sixense';
-  const newPrefix = core.getInput('new-prefix') || 'sxd-platform';
-  const publishRegistry= core.getInput('publish-registry') || 'https://npm.pkg.github.com/';
+  const projectsPath = core.getInput('packages-path');
+  const oldPrefix = core.getInput('old-prefix');
+  const newPrefix = core.getInput('new-prefix');
+  const publishRegistry= core.getInput('publish-registry');
   console.info(`Beyond packages rename running !`);
   console.info(`Beyond packages replace !`, oldPrefix, newPrefix);
   const time = (new Date()).toTimeString();
