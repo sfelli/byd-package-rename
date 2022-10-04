@@ -8,7 +8,7 @@ inputs:
   old-prefix: # id of input
     description: 'The old packages prefix'
     required: false
-    default: 'new-prefix'
+    default: 'sixense'
   new-prefix:  # id of input
     description: 'The new packages prefix'
     required: false
