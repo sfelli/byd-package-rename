@@ -16047,8 +16047,8 @@ try {
   const oldPrefix = core.getInput('old-prefix') || 'sixense';
   const newPrefix = core.getInput('new-prefix') || 'sxd-platform';
   const publishRegistry= core.getInput('publish-registry') || 'https://npm.pkg.github.com/';
-
   console.info(`Beyond packages rename running !`);
+  console.info(`Beyond packages replace !`, oldPrefix, newPrefix);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
 
