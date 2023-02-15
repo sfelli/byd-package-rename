@@ -4,7 +4,8 @@ const path = require('path');
 const glob = require("fast-glob");
 
 try {
-  const projectsPath = core.getInput('packages-path');
+  const pkgsPath = 'packages-path';
+  const projectsPath = core.getInput(pkgsPath);
   const oldPrefix = core.getInput('old-prefix');
   const newPrefix = core.getInput('new-prefix');
   const publishRegistry= core.getInput('publish-registry');
