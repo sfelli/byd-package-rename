@@ -1,7 +1,7 @@
 {
   "name": "byd-package-rename",
   "version": "1.0.0",
-  "description": "",
+  "description": "The script takes two arguments: the old package name and the new package name. It then recursively searches through the specified directory and renames all occurrences of the old package name to the new package name.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
